@@ -24,7 +24,7 @@ module.exports = function (RED) {
 
     // on close
     this.on('close', function () {
-      node.info('closing')
+      node.log('closing')
       bin.handleCloseEvent()
     })
   }
